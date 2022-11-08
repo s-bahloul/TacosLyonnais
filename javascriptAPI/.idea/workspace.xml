@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="f7e8ac81-8e9d-4988-8f6d-178de8e45adb" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../Exercicesjavascript/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ProjetAnnonces/.htaccess" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ProjetAnnonces/.idea/ProjetAnnonces.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ProjetAnnonces/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ProjetAnnonces/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ProjetAnnonces/.idea/sqldialects.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ProjetAnnonces/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ProjetAnnonces/assets/css/styles.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ProjetAnnonces/controleurs/controleurArticle.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ProjetAnnonces/controleurs/controleurUtilisateur.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ProjetAnnonces/modeles/articles.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ProjetAnnonces/modeles/connexionUtilisateur.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ProjetAnnonces/modeles/inscriptionUtilisateur.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ProjetAnnonces/modeles/pdo.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ProjetAnnonces/vues/accueil.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ProjetAnnonces/vues/connexionUtilisateurVue.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ProjetAnnonces/vues/deconnectUtilisateurVue.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ProjetAnnonces/vues/detailsArticle.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ProjetAnnonces/vues/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ProjetAnnonces/vues/inscriptionUtilisateurVue.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ProjetAnnonces/vues/menu.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ProjetAnnonces/vues/splachpage.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ProjetAnnonces/vues/template.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Reserv_Gites/.idea/Reserv_Gites.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Reserv_Gites/modeles/Reservation.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Reserv_Gites/pages/AjoutGite.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Reserv_Gites/pages/Confirmation.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Reserv_Gites/pages/Deconnexion.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Reserv_Gites/pages/MiseJourGite.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Reserv_Gites/pages/ReservationV.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Reserv_Gites/pages/SupprimGite.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Reserv_Gites/pages/detailGite.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../crudExpress/css/styles.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../crudExpress/nodeModule/produits.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../crudExpress/nodeModule/server.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/produits.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/produits.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/css/styles.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javascriptTest/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javascriptTest/main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../projetVuejs/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../projetVuejs/Package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../projetVuejs/Src/components/AjouterProduit.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../projetVuejs/Src/components/ProduitComponent.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../projetVuejs/Src/main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../projetVuejs/Src/views/Produit.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../saidaProject/config/packages/knp_paginator.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../saidaProject/public/css/styles.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../saidaProject/templates/inclouds/footer.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../saidaProject/templates/inclouds/menu.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../saidaProject/templates/produits/detailsProduit.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../saidaProject/templates/produits/humain.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../testJavascript/.idea/jsLibraryMappings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../testJavascript/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../testJavascript/public/css/styles.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../testJavascript/robes.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../testJavascript/robes.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../testJavascript/server.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vuejs/css/styles.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vuejs/index.html" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
+    <execution />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="package.json" />
+        <option value="JavaScript File" />
+        <option value="composer.json" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="2E22xvPXtPiMgfGKJ81pJYFhFJ7" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../expressJs" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="ComposerRunConfigurationType" factoryName="Composer Script">
+      <option name="pathToComposerJson" value="$PROJECT_DIR$/composer.json" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f7e8ac81-8e9d-4988-8f6d-178de8e45adb" name="Default Changelist" comment="" />
+      <created>1661779608266</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1661779608266</updated>
+      <workItem from="1661779609313" duration="30445000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="463" y="119" key="FileChooserDialogImpl" timestamp="1662035207618">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728/-1920.-156.1920.1040@0.0.1366.728" timestamp="1662035207618" />
+  </component>
+</project>
