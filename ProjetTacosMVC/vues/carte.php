@@ -14,31 +14,44 @@
     <title>Document</title>
 </head>
 <body>
-<div class="wrapper">
-    <div class="contact">
-        <h1>Nous contacter</h1>
-        <div class="contact-items">
-            <div class="contact-item">
-                <a href="tel:0388888888">
-                    <ion-icon name="call"></ion-icon>
-                    00(213) 5 88 54 01 80
-                </a>
-            </div>
-            <div class="contact-item">
-                <a href="mailto:exemple@test.com">
-                    <ion-icon name="mail"></ion-icon>
-                    athman-640@hotmail.fr
-                </a>
-            </div>
-            <div class="contact-item">
-                <a href="www.exemple.com">
-                    <ion-icon name="globe"></ion-icon>
-                    www.tacoslyonnais.com
-                </a>
-            </div>
+<div class=" container wrapper">
+    <div class="row g-0 contact">
+
+
+        <div class="col-6 col-md-4 " >
+            <h1 class="mb-5">Nous contacter</h1>
+                <div class="contact-items mt-5">
+                    <div class="contact-item mb-5">
+                        <a  href="tel:00(213) 5 88 54 01 80" class="lienCarte">
+                            <ion-icon name="call"></ion-icon>
+                            00(213) 542 16 70 42
+                        </a>
+                    </div>
+                    <div class="contact-item mb-5">
+                        <a href="athman-640@hotmail.fr" >
+                            <ion-icon name="mail"></ion-icon>
+                            athman-640@hotmail.fr
+                        </a>
+                    </div>
+                    <div class="contact-item mb-5">
+                        <a href="www.tacoslyonnais.com" >
+                            <ion-icon name="globe"></ion-icon>
+                            www.tacoslyonnais.com
+                        </a>
+                    </div>
+                    <div class="contact-item mb-5">
+                        <a href="www.exemple.com">
+                            <ion-icon name="location"></ion-icon>
+                            Cartier Sghir-Béjaia
+                        </a>
+                    </div>
+                </div>
+        </div>
+        <div class="col-sm-6 col-md-8">
+            <div id="map"></div>
         </div>
     </div>
-    <div id="map"></div>
+
 </div>
 <script
         type="module"

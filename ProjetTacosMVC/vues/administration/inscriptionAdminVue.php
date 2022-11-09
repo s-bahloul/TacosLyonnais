@@ -1,14 +1,12 @@
-<div id="form-user">
 
-    <h1 class="text-center text-info m-5">INSCRIPTION ADMINISTRATEUR</h1>
+<!--mon formulaire d'inscription avec la methode post et le boutton btn-inscription-admin qui déclache la fonction -->
+<div class="container divAdmin">
 
-    <div class="container bg-warning">
-        <form method="post">
+    <div class="container cardTitre text-center">
+        <h1 class="ml2 m-5 ">INSCRIPTION ADMINISTRATEUR</h1>
 
-            <div class="form-group">
-                <label for="InputName">Nom</label>
-                <input type="text" name="nomAdmin" class="form-control" id="InputName" placeholder="Votre Nom">
-            </div>
+        <form method="post" id="form-admin">
+
 
             <div class="form-group">
                 <label for="InputEmail1">Email</label>
@@ -22,14 +20,15 @@
 
             <div class="form-group">
                 <label for="InputPassword1">Confirmer le mot de passe</label>
-                <input type="password" name="passwordRepete" class="form-control" id="InputPassword1" placeholder="Mot de passe">
+                <input type="password" name="passwordRepeter" class="form-control" id="InputPassword1" placeholder="Répéter le mot de passe">
             </div>
 
             <!--Ce bouton est recup via son attribut name et methode post $_POST['btn_valid_user']-->
-            <div class="container text-center  p-4">
-                <button name="btnInscritAdmin" type="submit" class="btn btn-info">S'inscrire</button>
-                <a href="accueil" class="btn btn-danger">Annuler</a>
+            <div class="container mt-5 mb-5 ">
+                <div class="btn-group" role="group" aria-label="Basic example">
+                    <button name="btn-inscription-admin" type="submit" class="a-anime  mb-5 ">S'inscrire</button>
+                    <a  href="accueil" class=" a-anime  mb-5  ">Annuler</a>
+                </div>
             </div>
         </form>
     </div>
-<?php

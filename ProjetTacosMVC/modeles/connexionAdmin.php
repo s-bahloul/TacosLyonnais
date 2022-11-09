@@ -1,25 +1,30 @@
 <?php
 
+
 require_once "../modeles/Database.php";
 
 //faire l'héritage Database
 class Connexion extends Database {
+
+    //je fait les propritées privées de l'admin
+    private $idAdmin;
     private $nomAdmin ;
     private $emailAdmin ;
     private $passwordAdmin ;
     private $passwordRepete ;
+    private $role;
 
 
 //-----------------------------------------------------------------------------------------------------
 
-    //faire la connexion pour utilisateur
+    //faire la connexion pour l'admin
     public function ConnexionAdmin() {
 
         //faire appel à la methode public getPDO()
 
         $db = $this->getPDO();
 
-        //Verifie si utilisateurs est deja connecté
+        //Verifie si l'admin est deja connecté
 
         if (isset($_SESSION['connecterAdmin']) && $_SESSION['connecterAdmin'] === true) {
 
@@ -30,7 +35,9 @@ class Connexion extends Database {
             // Sinon, l'administrateur doit s'inscrire
         }else{
 
-            echo "<h5 class='alert-primary '>Veuillez vous inscrire <a href='inscription' class='btn btn-info'>S'incrire</a></h5>";
+            echo "<div class='container text-center'>
+                    <h5 class='alert-danger '>Veuillez vous inscrire <a href='inscription' class='btn btn-warning '>S'incrire</a></h5></div>
+                    ";
         }
 
         //Verifier le champs de formulaire email et mot de passe
@@ -53,30 +60,29 @@ class Connexion extends Database {
         //faire la requete
         if (!empty($_POST['emailAdmin']) && !empty($_POST['passwordAdmin'])) {
 
-            $sql = "SELECT * FROM administrateur WHERE email_admin = ? AND role = ?";
+            $sql = "SELECT * FROM administrateur WHERE email_admin = ?";
 
             //Requète préparée
             $admin = $db->prepare($sql);
-            $role = "administrateur";
+
 
 
             $admin->bindParam(1, $this->emailAdmin);
-            $admin->bindParam(2, $role);
+
             $admin->execute(
                 array(
                     $this->emailAdmin,
-                    $role
                 )
             );
 
             //parcourir la table admin
-            if ( $admin->rowCount() >= 1) {
+            if ($admin->rowCount() >= 1) {
 
                 //afficher les elements
                 $count =  $admin->fetch(PDO::FETCH_ASSOC);
 
-                if ($this->emailAdmin=== $count['emailAdmin']
-                    && password_verify($this->passwordAdmin, $count['passwordAdmin'] ) && $role === $count['role']) {
+                if ($this->emailAdmin === $count['email_admin']
+                    && password_verify($this->passwordAdmin, $count['password_admin'])) {
 
                     //demarrer la  seesion qu'on stock dans une variable
                     session_start();
@@ -88,18 +94,18 @@ class Connexion extends Database {
                     header("Location: accueil");
 
 
-                    //faire les trois message d'erreurs
+                    //faire les message d'erreurs
                 } else {
                     //pas d'egalité
-                    echo "<p class='alert-danger p-2'>erreur email et mot passe ne sont pas correct !</p>";
+                    echo "<p class='alert-warning p-2'>erreur email et mot passe ne sont pas correct !</p>";
                 }
             } else {
                 //table vide
-                echo "<p class='alert-danger mt-3 p-2'>Aucun utilisateur ne possède cet email et mot de passe</p>";
+                echo "<p class='alert-warning mt-3 p-2 text-center'>Aucun utilisateur ne possède cet email et mot de passe</p>";
             }
         } else {
             //champs vide
-            echo "<p class='alert-danger p-2'>Merci de remplir tous les champs</p>";
+            echo "<p class='alert-warning text-center p-2'>Merci de remplir tous les champs</p>";
         }
     }
 }

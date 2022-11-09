@@ -1,90 +1,480 @@
+/*importer la font poppins*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
+/*Basic style*/
 
-
-body{
-    /* L'image utilisée */
-    background-image: url(../img/planche.jpeg);
-    /*padding-top: 80px;*/
+h1{
+    color: red;
+    font-weight: 900;
+    font-size: 3.5em;
+    display: inline-block;
+    line-height: 1em;
 }
 
 h2{
-    color: black;
-}
-
-.divImg{
-    background-color: black;
-}
-
-.divTitre{
-    background-color: black;
-}
-
-@import "bourbon";
-
-*{
-    box-sizing: border-box;
-}
-
-
-span{
-    margin: 0;
-    padding: 0;
-}
-
-.end-left{
-    margin-left: -235px;
-}
-
-.end-right{
-    margin-right: -117.5px;
-}
-.outline{
-    position: absolute;
-    top: 20px;
-}
-
-.outline{
-    color: black;
-    -webkit-text-fill-color: transparent; /* Will override color (regardless of order) */
-    -webkit-text-stroke-width: 2px;
-    -webkit-text-stroke-color: orange;
-    font-size: 64px;
-    font-family: 'Arvo', serif;
-}
-
-.orbs{
-    font-family: 'Raleway', sans-serif;
-    font-weight: 100;
-    display: block;
-    font-size: 128px;
-
-
-span{
     color: red;
+    font-weight: 900;
+    font-size: 3.5em;
     display: inline-block;
-    text-align: center;
-    border-radius: 50%;
-    text-shadow: 0 0 20px orange, 1px 1px 20px orange, 2px 2px 20px orange, -1px -1px 20px orange, -2px -2px 20px orange;
-    position: absolute;
-    left: 50%;
+    line-height: 1em;
 
-&:first-child{
-     margin-left: -210px;
- }
-
-&:not(:first-child){
-     margin-left: -35px;
- }
-}
 }
 
-.glow{
-    opacity: 0;
-    font-family: 'Arvo', serif;
-    font-weight: 300;
-    color: orange;
-    margin-left: -222.5px;
-    font-size: 105px;
+
+h3{
+    text-shadow:   -1px -1px 0 #751C1C,
+    1px -1px 0 #751C1C,
+    -1px 1px 0 #751C1C,
+    1px 1px 0 #751C1C,
+    1px 1px 10px #141414;color:#DE3535;
+    font-size: 30px;
+    color: red;
+
+}
+
+.ml2 {
+    font-weight: 900;
+    font-size: 3.5em;
+}
+
+.ml2 .letter {
+    display: inline-block;
+    line-height: 1em;
+}
+
+.div#bloc1 {
+    float: left;
+    width: 400px;
+}
+.divCard{
+    /*background-color: black;*/
+  opacity: 1;
+}
+.cardTitre{
+    background-color: black;
+    margin-left: auto;
+    margin-right: auto;
+}
+.divAdmin{
+    margin-top: 100px;
+}
+
+/*style navbar fonts*/
+body{
+    /* L'image utilisée */
+ background-image: url(../img/pizzaD.jpg);
+    background-attachment: fixed, scroll;
+    background-repeat: no-repeat, repeat-y;
+    /* style de la navbar*/
+    font-size:var(--font-size);
+    font-family: 'Poppins', sans-serif;
+
+}
+
+/*Variables*/
+    :root{
+        --font-size:1rem;
+    }
+/*pour modifier facilement la navbar, les deux mode light et dark*/
+.light-mode{
+    --navbar-color: #222;
+    --navbar-bg-color: #F0F0F0;
+}
+.dark-mode{
+    --navbar-color: #FFF;
+    --navbar-bg-color: #000;
+}
+
+/* Reset*/
+* {
+   /*box-sizing définit la façon dont la hauteur et la largeur totale d'un élément est calculée*/
+    box-sizing:border-box;
+    /*Les contours (outline) diffèrent des bordures*/
+    outline:none;
+    margin:0;
+    padding:0;
+
+}
+ul{
+    /*pour eviter les puces*/
+    list-style: none;
+}
+
+.main-content{
+    padding:1rem;
+}
+
+/* Navbar */
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 110px;/*hauteur de menu*/
+    padding: 50px;
+    color:var(--navbar-color);
+    background:var(--navbar-bg-color);
+}
+.navbar__links{
+    /*pour mettre les elements en ligne*/
+    display: flex;
+}
+.navbar__link{
+    /*pour faire des espaces à gauche et à droite*/
+    padding:0 40px ;
+}
+.navbar__link > a{
+    text-decoration: none;
+   /* color:var(--navbar-color);*/
+    color: red;
+    /*font-weight permet de définir la graisse et font-size définit la taille de fonte utilisée pour le texte */
+    font-weight: 700;
+    font-size: 1.4em;
+}
+/*display none sur grand ecran*/
+.burger{
+    display: none;
+}
+
+/*petit (small) écran*/
+@media screen and (max-width: 1023px){
+
+    .navbar__links{
+        display: flex;
+        /*pour mettre le menu en colone*/
+       flex-direction:column;
+        width:0;
+        height:calc(100vh - 65px);/*hauteur*/
+        position:absolute;
+        /*en haut pour liberer le logo*/
+        top:100px;
+        /*apparaitre à droite*/
+        right:0;
+        background:var(--navbar-bg-color) ;
+        transition: all .5s ease-in-out;
+        margin-left: -100%;
+    }
+    /*la class show-nav passe 100% sur petit ecran*/
+    .show-nav .navbar__links{
+      /*display: none;*/
+        width: 100%;
+
+    }
+    .navbar__link{
+        transform:translateX(101%);
+    }
+    .show-nav .navbar__link{
+        transform: translateX(0);
+    }
+
+    .navbar__link > a {
+        display:block ;
+        padding: 1rem;
+        font-size: 1.6rem;
+        /*transition toute les 4 second*/
+        transition:all .4s ease-in-out;
+    }
+    .navbar__link > a:hover {
+        padding-left: 2rem;
+        /*letter-spacing définit l'interlettre*/
+        letter-spacing:5px;
+
+    }
+    /*toglle menu*/
+
+    .burger{
+        display: block;
+        position: relative;
+        padding: 0;
+        width:45px;
+        height:45px;
+        border: none;
+        background:transparent ;
+        cursor: pointer;
+    }
+    /*dessiner les bars du  burger*/
+    .bar{
+        display: block;
+        width: 45px;
+        height: 4px;
+        background: var(--navbar-color);
+        border-radius: 3px;
+        transition: all .5s ease-in-out;
+    }
+    .show-nav .bar{
+        width: 0;
+        background: transparent;
+    }
+    /*dessiner les bars de dessus et de dessous*/
+    .bar::before, .bar::after{
+       content:"";
+        width: 45px;
+        height: 4px;
+        position:absolute;
+        left: 0;
+        background: var(--navbar-color);
+        border-radius: 3px;
+        transition: all .5s ease-in-out;
+    }
+
+
+    .bar::before{
+        transform:translateY(-12px);
+    }
+    /*au click sur le burger, on va rajouter une classe show-nav*/
+    /*faire la transformation pour faire la croix*/
+    .show-nav .bar::before{
+        transform:rotate(45deg);
+    }
+
+    .bar::after{
+        transform:translateY(12px);
+    }
+    .show-nav .bar::after{
+        transform:rotate(-45deg);
+    }
+    /*animation*/
+    .show-nav .first{
+        transition: all 1s ease-out;
+    }
+    .show-nav .second{
+        transition: all 1.1s ease-out;
+    }
+    .show-nav .third{
+        transition: all 1.2s ease-out;
+    }
+    .show-nav .four{
+        transition: all 1.3s ease-out;
+    }
+    .show-nav .fifth{
+        transition: all 1.4s ease-out;
+    }
+
+}
+
+
+/*grand  (medium)écran*/
+@media screen and (min-width:768px){
+.navbar__link > a::after{
+    display: block;
+    content:"";
+    width: 0;
+    height: 1px;
+    background: var(--navbar-color);
+
+    transition: width .4s;
+}
+    .navbar__link:hover > a::after{
+        /*notre element after va s'agrandir au survol*/
+        width: 100%;
+    }
+}
+/*Créer un bouton avec un effet de “remplissage”*/
+.a-anime {
+    width: 200px;
+    height: 60px;
+    font-size: 1.3rem;
+    font-family: arial, sans-serif;
+    font-weight: 700;
+    position: relative;
+    color: red;
+    z-index: 0;
+    /*border: 1px solid #892cdc;*/
+    background: black;
+    overflow: hidden;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+/*Stylisons maintenant le pseudo-élément.*/
+.a-anime::before {
+    content: '';
     position: absolute;
-    top: 200px;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background:red;
+    z-index: -1;
+    transition: all .5s;
+}
+/*Stylisons pour finir le lien au survol de la souris.*/
+.a-anime:hover::before {
+    top: 0px;
+    border-radius: 0;
+}
+/*style animation image*/
+.zoom img {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+}
+.zoom :hover img {
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
+}
+
+/*faire le syle d'un bouton*/
+.divAjout{
+    background-color: red;
+}
+
+
+
+/*footer*/
+footer{
+    background-color: black;
+    flex-shrink: 0;
+    border-top:1px dashed #000;
+    width: 100%;
+    color: #FFFFFF;
+
+
+
+}
+.contenu-footer{
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    font-size: 20px;
+    padding:50px 0 100px;
+}
+.contenue{
+    flex: 1 0 auto;
+}
+.contenu p {
+    padding: 5vw 10vw;
+    text-align: justify;
+}
+.bloc{
+    width: 25%;
+    margin: 0 30px;
+}
+/*contact*/
+.footer-contact h3,
+.footer-horaires h3,
+.footer-services h3,
+.footer-medias h3{
+    font-size: 25px;
+    padding-bottom: 20px;
+}
+.footer-contact p{
+padding: 2px 0;
+}
+
+
+.contenu-footer li {
+   list-style-type:none;
+}
+
+.contenu-footer a{
+    text-decoration: none;
+    color:#FFFFFF;
+}
+.contenu-footer a:hover {
+    color:red;
+}
+/*Media queries*/
+@media screen and (max-width: 1300px){
+
+    .contenu-footer{
+        width: 700px;
+        flex-wrap: wrap
+    }
+    .bloc{
+        width: 40%;
+        margin: 0 0;
+    }
+    .bloc:nth-child(1),
+    .bloc:nth-child(2){
+        margin-bottom: 50px;
+    }
+
+}
+@media screen and (max-width: 800px){
+    .contenu-footer{
+        width: 320px;
+
+    }
+    .bloc{
+        width: 300px;
+        margin: 30px 30px;
+    }
+    .bloc:nth-child(1),
+    .bloc:nth-child(2){
+        margin-bottom: 30px;
+    }
+    .bloc:nth-child(1){
+        margin-top: 0;
+    }
+}
+video#bgvid {
+    position: fixed;
+    top: 50%;
     left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    transform: translateX(-50%) translateY(-50%);
+    background-size: cover;
+}
+
+
+/*pour la page carte*/
+.contact {
+    padding-left: 0px;
+}
+
+
+
+/*style de la page contact*/
+.wrapper {
+    width: 100%;
+
+    max-width: 1000px;
+    background-color:black;
+    margin-top: 20px;
+
+}
+
+.contact {
+    color:black;
+    text-decoration: none;
+   padding-top: 60px;
+    padding-left: 30px;
+    padding-bottom: 30px;
+}
+
+
+.contact-item {
+
+    align-items: center;
+    font-size: 20px;
+}
+
+.contact-item:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+ion-icon {
+    margin-right: 15px;
+
+}
+
+#map {
+    height: 700px;
+
+    flex: 1;
+}
+.contact-items a{
+    text-decoration: none;
+    color:#FFFFFF;
+}
+.contact-items a:hover {
+    color:red;
 }
